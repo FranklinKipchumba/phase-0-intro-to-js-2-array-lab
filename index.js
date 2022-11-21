@@ -34,11 +34,11 @@ function prependCat(){
     const allcats = ["Arnold", ...cats]
     return(allcats);
 }
-function removeLastCat(){
-    cats.splice(2);
-    return(cats)
+function removeLastCat(name) {
+    var removelastcat = cats.slice(0,cats.length-1);
+    return(removelastcat);
 }
-function removeFirstCat(){
-    cats.splice(0);
-    return(cats)
+function removeFirstCat(name) {
+    var removefirstcat = cats.slice(1);
+    return(removefirstcat);
 }
